@@ -4,11 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/main.css">
   <script src="./js/main.js" defer></script>
   <title>Portfolio</title>
 </head>
 <body>
-  <h1>Hello Adonis</h1>
+ <header>
+   <nav class="nav-container">
+     <ul>
+       <a class="nav-link" href="#" >Resume</a>
+       <a class="nav-link" href="#projects" >Projects</a>
+       <a class="nav-link" href="#info" >Info</a>
+     </ul>
+   </nav>
+ </header>
+
+<main>
+  <section class="summary">
+    <h2 class="summary">Summary</h2>
+    <p class="summary-content">Transitioned from professional ballet dancer to Software Engineer. My background allows me to have great communications skills. I’m a great team player. I’m able to manage my own time and handle myself under pressure. I’m original from cuba, music and dance are a big part of my culture, sometimes you are gonna see me with my headphones on and dancing around the office.</p>
+  </section>
+  <section id="projects" class="projects-container">
+    <h2 class="projects-header">Projects</h2>
+    <div class="projects-gallery">
+      <div class="gallery-items">
+      <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h2>Front Side</h2>
+            </div>
+            <div class="flip-box-back">
+              <h2>Back Side</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-items">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h2>Front Side</h2>
+            </div>
+            <div class="flip-box-back">
+              <h2>Back Side</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-items">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Front Side</h2>
+          </div>
+          <div class="flip-box-back">
+            <h2>Back Side</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+      <div class="gallery-items">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h2>Front Side</h2>
+            </div>
+            <div class="flip-box-back">
+              <h2>Back Side</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="info" class="info-container">
+    <h2 class="info-header">Info</h2>
+    <ul class="info-container">
+      <a  class="info-link" href="https://github.com/ADamian17" target="_blank">Github</a>
+      <a class="info-link" href="https://www.linkedin.com/in/adonismartin" target="_blank">LinkedIn</a>
+    </ul>
+  </section>
+</main>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>
