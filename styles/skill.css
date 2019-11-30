@@ -1,0 +1,14 @@
+.skills{
+  height: 60vh;
+}
+
+.skills-header{
+  text-align: center;
+}
+
+.skills-items {
+  background-color: purple;
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+}
