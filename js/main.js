@@ -1,8 +1,8 @@
 const projects = [
-	{title: "burning Rubber",  description: "this is a racing game", repoLink: "https://git.generalassemb.ly/ADamian17/burnning_rubber", gameLink: "https://pages.git.generalassemb.ly/ADamian17/burnning_rubber/", photo:"./images/Burnning_ Rubber.png"},
-	{title: "Okstupi",  description: "this is a racing game vjfhkj", repoLink: "https://git.generalassemb.ly/ADamian17/burnning_rubber", gameLink: "https://pages.git.generalassemb.ly/ADamian17/burnning_rubber/"},
-	{title: "Revive",  description: "this is a racing game jbvkjs", repoLink: "https://git.generalassemb.ly/ADamian17/burnning_rubber", gameLink: "https://pages.git.generalassemb.ly/ADamian17/burnning_rubber/"},
-	{title: "Not yet",  description: "this is a racing game fksjdh", repoLink: "https://git.generalassemb.ly/ADamian17/burnning_rubber", gameLink: "https://pages.git.generalassemb.ly/ADamian17/burnning_rubber/"},
+	{title: "burning Rubber",  description: "this is a racing game", repoLink: "https://git.generalassemb.ly/ADamian17/burnning_rubber", gameLink: "https://pages.git.generalassemb.ly/ADamian17/burnning_rubber/", photo:"https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"},
+	{title: "Okstupi",  description: "this is a racing game vjfhkj", repoLink: "https://git.generalassemb.ly/ADamian17/burnning_rubber", gameLink: "https://pages.git.generalassemb.ly/ADamian17/burnning_rubber/", photo:"https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80", photo:"https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"},
+	{title: "Revive",  description: "this is a racing game jbvkjs", repoLink: "https://git.generalassemb.ly/ADamian17/burnning_rubber", gameLink: "https://pages.git.generalassemb.ly/ADamian17/burnning_rubber/", photo:"https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"},
+	{title: "Not yet",  description: "this is a racing game fksjdh", repoLink: "https://git.generalassemb.ly/ADamian17/burnning_rubber", gameLink: "https://pages.git.generalassemb.ly/ADamian17/burnning_rubber/", photo:"https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"},
 ]
 
 
@@ -27,7 +27,6 @@ const showProjects = (arr) => {
 		</div>
 		<hr />`
 		$projectList.append(template)
-		console.log(`this is the photo ${arr[i].photo}`)
 	}
 	
 }
