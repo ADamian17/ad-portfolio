@@ -6,7 +6,7 @@
 .header-content {
   background-color: slateblue;
   height: 100vh;
-  /* clip-path: polygon(0 0, 100% 0%, 100% 42%, 0% 100%); */
+  clip-path: polygon(0 0, 100% 0%, 100% 42%, 0% 100%);
 }
 
 .header-caption {
@@ -25,27 +25,10 @@
   background-color: rgba(0,0,0,0.5) !important;
 }
 
-/*.summary-section{
-  height: 50vh;
-}
-.summary-title{
-  text-align: center;
-}
-
-
-.projects-header{
-  text-align: center;
-}
-.projects-items{
-  background-color: lawngreen;
-  width: 200px;
-  height: 200px;
-  margin-left: 10px;
-} 
-
-footer{
-  background-color: rgba(0,0,0,0.5);
-  width: 100%;
+footer{ 
+  background-color: black;
+  color: #fff;
+  height: 7vh;
   margin: 0;
   padding: 0;
-} */
+ } 

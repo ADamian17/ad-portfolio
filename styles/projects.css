@@ -1,3 +1,7 @@
-.projects-section{
-  height: 60vh;
+.projects-header{
+  text-align: center;
+  margin-bottom: 15px;
+}
+.project-card {
+  width: 400px;
 }
