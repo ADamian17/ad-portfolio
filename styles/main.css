@@ -6,7 +6,7 @@
 .header-content {
   background-color: slateblue;
   height: 100vh;
-  clip-path: polygon(0 0, 100% 0%, 100% 42%, 0% 100%);
+  /* clip-path: polygon(0 0, 100% 0%, 100% 42%, 0% 100%); */
 }
 
 .header-caption {
