@@ -7,7 +7,7 @@
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="./styles/info.css">
+  <link rel="stylesheet" href="./styles/contacts.css">
   <link rel="stylesheet" href="./styles/skill.css">
   <link rel="stylesheet" href="./styles/projects.css">
   <script src="https://kit.fontawesome.com/b9e481b9e2.js" crossorigin="anonymous" defer></script>
@@ -21,10 +21,13 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="nav mr-auto">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#resume" data-toggle="modal" data-target="#exampleModalCenter">Resume</a>
@@ -39,13 +42,14 @@
     
     <main role="main">
     
-      <div id="header-section" class="row">
-        <div class="header-content col">
+      <div id="header-section" class="row justify-content-center align-items-center header-content p-2">
+        <div class=" col-12 col-md-6 col-sm-6 col-lg-6">
           <div class="header-item">
             <div class="container">
               <div class="header-caption text-center">
                 <h1>Hi, I'm Adonis Martin</h1>
-                <p>Spftware Engineer || Full Stack Web Developer</p>
+                <p>Software Engineer || Full Stack Web Developer</p>
+                <!-- <p class="summary-content"><q>Transitioned from professional ballet dancer to Software Engineer. My background allows me to have great communications skills. I’m a great team player. I’m able to manage my own time and handle myself under pressure. I’m original from cuba, music and dance are a big part of my culture, sometimes you are gonna see me with my headphones on and dancing around the office.</q></p> -->
                 <p><a class="btn btn-lg btn-primary" href="#projects" role="button">My Projects</a></p>
               </div>
             </div>
@@ -55,121 +59,107 @@
   
       <!-- Summary Content
       ================================================== -->
-      <div class="container summary-section">
-        <!-- summary start-->
-        <div class="row">
-          <div class="col col-sm-4"></div>
-          <div class="col col-sm-8">
-            <h2 class="summary-title">Summary</h2>
-            <p class="summary-content">Transitioned from professional ballet dancer to Software Engineer. My background allows me to have great communications skills. I’m a great team player. I’m able to manage my own time and handle myself under pressure. I’m original from cuba, music and dance are a big part of my culture, sometimes you are gonna see me with my headphones on and dancing around the office.</p>
-          </div><!-- /.col-lg-4 -->
+      <div class="row justify-content-center align-items-center about-holder size-vh-70 mb-5">
+        <div class="col p-5">
+          <h2 class="about-title text-center">About me</h2>
+          <p class="about-content text-center">Transitioned from professional ballet dancer to Software Engineer. My background allows me to have great communications skills. I’m a great team player. I’m able to manage my own time and handle myself under pressure. I’m original from cuba, music and dance are a big part of my culture, sometimes you are gonna see me with my headphones on and dancing around the office.</p>
         </div>
-        <!-- summary ends -->
-    
-        <!-- START THE PROJECTS-->
-        <hr id="projects" class="featurette-divider">
-        <div class="row">
+      </div>
+      <div class="container-fluid">
+        <div id="projects"  class="row">
            <div class="col">
             <h2 class="projects-header">Projects</h2>
           </div>
         </div>
-        <div id="project-list" class="row">
-        
-         <!-- /END THE FEATURETTES -->
+
+        <div id="project-list" class="row p-5 mb-5">
+              <!-- project list con jquery -->
         </div>
         <hr class="featurette-divider">
          <!-- Skills  Start-->
-         <div class="row">
+         <div class="row p-2">
           <div class="col">
             <h2 class="skills-header">Skills</h2>
           </div>
          </div>
-         <div class="row ">
-            <div class="col">
-              <div class="card">
+         <div class="row pb-5 mb-5 mr-2 ml-2">
+            <div class="col skill-card">
+              <div class="card ">
                   <div class="card-header">
-                    <i class="far fa-window-maximize"></i>
+                   <img src="./images/iconfinder_app_frontend_end.png" alt="icon" width="50" height="50">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Front-End</h5>
-                    <ul>
-                      <p>html/css</p>
-                      <p>JavaScript</p>
-                      <p>React</p>
-                      <p>Bootstrap</p>
-                    </ul>
+                      <p class="card-text">html/css</p>
+                      <p class="card-text">JavaScript</p>
+                      <p class="card-text">React</p>
+                      <p class="card-text">Bootstrap</p>
                   </div>
                 </div>
             </div>
 
             <div class="col">
-              <div class="card">
+              <div class="card skill-card">
                 <div class="card-header">
-                  <i class="fas fa-server"></i>
+                  <img src="./images/iconfinder_server_103333.png" alt="icon" width="50" height="50">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Server</h5>
-                    <ul>
-                      <p>Express</p>
-                      <p>Node.js</p>
-                    </ul>
+                  <h5 class="card-title">Server</h5>
+                  <p class="card-text">Express</p>
+                  <p class="card-text">Node.js</p>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card">
+              <div class="card skill-card">
                 <div class="card-header">
-                  <i class="fas fa-database"></i>
+                    <img src="./images/iconfinder_database_298757.png" alt="icon" width="50" height="50">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">DataBase</h5>
-                  <ul>
-                    <p>MongoDB</p>
-                    <p>SQL</p>
-                  </ul>
+                    <p class="card-text">MongoDB</p>
+                    <p class="card-text">SQL</p>
                 </div>
               </div>
             </div>
           </div> 
           <!-- skills ends -->
-          <hr class="featurette-divider">
+          <hr />
           <!-- contact start -->
-          <div class="row">
+          <div class="row p-5">
             <div class="col">
               <h2 class="info-header">Contact me</h2>
             </div>
           </div>
-          <div class="row" id="contact-info">
-           <div class="col-md-3"></div>
-            <div class="card">
-              <div class="card-body">
-                <div class="container">
-                    <div class="col-6">
-                      <div class="info-holder">
-                        <ul>
-                          <li class="infoItems"><a class="info-link" href="https://github.com/ADamian17" target="_blank"> <i class="fab fa-github-square">Github</i></a></li>
-                          <li class="infoItems"><a class="info-link" href="https://www.linkedin.com/in/adonismartin" target="_blank"><i class="fab fa-linkedin">LinkedIn</i></a></li>
-                          <li class="infoItems"><a href="mailto:adonisdesuvikdo@gmail.com" target="_blank"><i class="fas fa-envelope">adonisdesuvikdo@gmail.com</i></a></li>
-                          <li class="infoItems"><a href="tel:+5109876466"><i class="fas fa-phone-square-alt">510-987-6466</i></a></li>
-                         </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-3"></div>
+          <div class="row p-5" id="contact-info">
+              <div class="col-sm-3 text-center">
+                <a class="info-link" href="https://github.com/ADamian17" target="_blank"><img src="./images/iconfinder_mark-github_298822.png" alt="icon" class="rounded-circle" width="100" height="100"></a>
+                  <h5>Github</h5>
                 </div>
-              </div>
-            </div>
+
+              <div class="col-sm-3 text-center">
+                  <a class="info-link" href="https://www.linkedin.com/in/adonismartin" target="_blank"><img src="./images/iconfinder_linkedin_circle_black_107159.png" alt="icon" class="rounded-circle" width="100" height="100"></a>
+                  <h5>LinkedIn</h5>
+                </div>
+              <div class="col-sm-3 text-center">
+                  <a class="info-link" href="mailto:adonisdesuvikdo@gmail.com" target="_blank"><img src="./images/iconfinder_Rounded-07_2024667.png" alt="icon" class="rounded-circle" width="100" height="100"></a>
+                  <h5>adonisdesuvikdo@gmail.com</h5>
+                </div>
+              <div class="col-sm-3 text-center">
+                <a href="tel:+5109876466"><img src="./images/iconfinder_21_Media_social_website_phone_2657555.png" alt="icon" class="rounded-circle" width="100" height="100"></a>
+                <h5>+1(510)-987-6466</h5>
+                </div>
           </div>
-          <!-- contact -->
-      </div><!-- /.container -->
-    <div class="row container">
-      <div class="col">
-        <p class="float-right"><a href="#">Back to top</a></p>
       </div>
-    </div>
+
+      <hr /> 
+      <div class="row justify-content-center p-5">
+        <p class="float-right"><a href="#"><img src="./images/backToTheTop.png" alt="icon" width="50" height="50"></a></p>
+      </div>
 
     <!-- FOOTER -->
-    <footer class="container-fluid">
-      <p>&copy; 2019 AD .Org</p>
+    <footer class="row justify-content-end p-3">
+      <p class="mr-5">&copy; 2019 Adonis D. Martin</p>
     </footer>
   </main>
   <!-- Modal -->
@@ -177,7 +167,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalCenterTitle">Adonis Resume</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -187,9 +177,7 @@
       </div>
     </div>
   </div>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
