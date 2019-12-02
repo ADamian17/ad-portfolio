@@ -4,12 +4,17 @@
 }
 
 .header-content {
-  background-color: slateblue;
+  background-image: url('../images/todayP.jpg');
+  background-color: lightgrey; 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   /* clip-path: polygon(0 0, 100% 0%, 100% 42%, 0% 100%); */
 }
 
 .header-caption {
+  background-color: rgba(0,0,0,0.4);
   position: absolute;
   right: 15%;
   bottom: 35%;
@@ -17,14 +22,43 @@
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #fff;
-  text-align: center
+  color: #fff !important;
+  text-align: center;
+  color: black;
 }
 
 .navbar {
   background-color: rgba(0,0,0,0.5) !important;
 }
 
+
+.about-holder{
+  position: relative;
+  background-image: url('../images/background1.jpg'); 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.about-holder::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.4)
+}
+
+.about-holder h2, .about-holder p{
+  position: relative;
+  z-index: 3;
+}
+
+.size-vh-70{
+  height: 70vh;
+}
 footer{ 
   background-color: black;
   color: #fff;
