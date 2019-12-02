@@ -1,6 +1,6 @@
 const projects = [
-	{title: "Burning Rubber",  description: "this is a racing game Akskjdcskcnkkc ksdjckjckscnkk", repoLink: "https://git.generalassemb.ly/ADamian17/burnning_rubber", gameLink: "https://pages.git.generalassemb.ly/ADamian17/burnning_rubber/", photo:"../images/burnning_rubber.png"},
-	{title: "Burning Rubber",  description: "this is a racing game Akskjdcskcnkkc ksdjckjckscnkk", repoLink: "https://git.generalassemb.ly/ADamian17/burnning_rubber", gameLink: "https://pages.git.generalassemb.ly/ADamian17/burnning_rubber/", photo:"../images/burnning_rubber.png"},
+	{title: "Burning Rubber",  description: "this is a racing game Akskjdcskcnkkc ksdjckjckscnkk", repoLink: "https://git.generalassemb.ly/ADamian17/burnning_rubber", gameLink: "https://pages.git.generalassemb.ly/ADamian17/burnning_rubber/", photo:"./images/burnning_rubber.png"},
+	{title: "Burning Rubber",  description: "this is a racing game Akskjdcskcnkkc ksdjckjckscnkk", repoLink: "https://git.generalassemb.ly/ADamian17/burnning_rubber", gameLink: "https://pages.git.generalassemb.ly/ADamian17/burnning_rubber/", photo:"./images/burnning_rubber.png"},
 ]
 
 // functions
