@@ -18,7 +18,7 @@ const showProjects = (arr) => {
 				<div class="card-body">
 					<h5 class="card-title"><a href=${arr[i].repoLink} target="_blank">${arr[i].title}.</a></h5>
 					<p class="card-text">${arr[i].description}.</p>
-					<a href=${arr[i].gameLink} class="btn btn-primary">link to the game</a>
+					<a href=${arr[i].gameLink} class="btn btn-primary rounded-pill float-right">Demo</a>
 				 </div>
 			  </div>
 			 </div>
