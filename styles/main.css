@@ -63,10 +63,8 @@
 .size-vh-70{
   height: 70vh;
 }
+
 footer{ 
   background-color: black;
   color: #fff;
-  height: 7vh;
-  margin: 0;
-  padding: 0;
  } 
