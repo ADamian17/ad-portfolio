@@ -4,6 +4,8 @@
 }
 
 .card {
+  max-height: 520px;
+  min-height: 310px;
   -webkit-box-shadow: 10px 12px 5px -1px rgba(0,0,0,0.32);
   -moz-box-shadow: 10px 12px 5px -1px rgba(0,0,0,0.32);
   box-shadow: 10px 12px 5px -1px rgba(0,0,0,0.32);
@@ -12,6 +14,15 @@
 
 .skill-card:hover{
   transform: scale(1.1);
+  transition: 0.5s ;
   opacity: 1;
   z-index: 1;
+}
+
+.grayscale { 
+  filter: grayscale(100%); 
+}
+
+.card-img-top{
+  max-height: 510px !important;
 }
