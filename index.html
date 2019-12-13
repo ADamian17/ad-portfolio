@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="./styles/contacts.css">
   <link rel="stylesheet" href="./styles/skill.css">
   <link rel="stylesheet" href="./styles/projects.css">
-  <script src="./js/jquery-2.1.3.min.js" defer ></script>
+  <script src="./js/jquery-2.1.3.min.js" defer></script>
+  <script src="./js/projects.js" defer></script>
   <script src="./js/main.js" defer></script>
   <title>Portfolio</title>
 </head>
@@ -49,20 +50,30 @@
               <div class="header-caption text-center">
                 <h1>Hi, I'm Adonis Martin</h1>
                 <p>Software Engineer || Full Stack Web Developer</p>
-                <p><a class="btn btn-lg btn-primary" href="#projects" role="button">My Projects</a></p>
+                <p><a class="btn btn-outline-primary rounded-0" href="#projects" role="button">My Projects</a></p>
               </div>
             </div>
           </div>
         </div>
       </div>
+  
       <!-- Summary Content
       ================================================== -->
-      <div class="row justify-content-center align-items-center about-holder size-vh-70 mb-5">
-        <div class="col p-5">
+      <div id="about" class="row justify-content-center align-items-center about-holder size-vh-70 mb-5">
+        <div class="container col-12 col-md-4 col-sm-4 col-lg-9">
           <h2 class="about-title text-center">About me</h2>
-          <p class="about-content text-center">Hola! I am Adonis Martin, born and raised in Contramaestre, Cuba. I am a classically trained Ballet and Modern dancer, who has taken his last bow, and transitioned to full-stack engineer. 
-              I danced professionally for 11 years, and through those years of experience and training, I have acquired a valuable set of skills and disciplines. I continue to perform through life with both mental and physical enthusiasm, I work great in a group, and communicate efficiently and graciously with others. I am a determined and strategic worker, but what sets me a part is my distinct, creative energy as well.
-              I am bilingual, proficient in both English and Spanish. I celebrate the culture of my country through dance and music, and it’s not uncommon to find me with my headphones on, grooving to the beat as I work. </p>
+          <!-- <div class="row align-items-center">
+            <div class="col col-sm"></div>
+            <div class="col col-sm align-self-center">
+              <img class="rounded-circle aboutMeImg mr-2" src="./images/todayP.jpg" alt="image">
+            </div>
+            <div class="col col-sm"></div>
+          </div> -->
+          <div class="container p-2">
+            <p class="about-content text-center">Hola! I am Adonis Martin, born and raised in Contramaestre, Cuba. I am a classically trained Ballet and Modern dancer, who has taken his last bow, and transitioned to full-stack engineer. 
+            I danced professionally for 11 years, and through those years of experience and training, I have acquired a valuable set of skills and disciplines. I continue to perform through life with both mental and physical enthusiasm, I work great in a group, and communicate efficiently and graciously with others. I am a determined and strategic worker, but what sets me apart is my distinct, creative energy as well.
+            I am bilingual, proficient in both English and Spanish. I celebrate the culture of my country through dance and music, and it’s not uncommon to find me with my headphones on, grooving to the beat as I work.</p>
+          </div>
         </div>
       </div>
       <div class="container-fluid">
@@ -72,7 +83,7 @@
           </div>
         </div>
 
-        <div id="project-list" class="row p-5 mb-5">
+        <div id="project-list" class="row p-2 mb-2">
               <!-- project list con jquery -->
         </div>
         <hr class="featurette-divider">
@@ -83,12 +94,12 @@
           </div>
          </div>
          <div class="row pb-5 mb-5 mr-2 ml-2">
-            <div class="col col-md col-sm col-lg pb-5 skill-card">
-              <div class="card ">
+            <div class="col-12 col-md-6 col-sm-6 col-lg-4 mb-3">
+              <div class="card skill-card">
                   <div class="card-header">
-                   <img src="./images/iconfinder_app_frontend_end.png" alt="icon" width="50" height="50">
+                   <img class="skill-img grayscale" src="./images/iconfinder_app_frontend_end.png" alt="icon" width="50" height="50">
                   </div>
-                  <div class="card-body">
+                  <div class="card-body text-center">
                     <h5 class="card-title">Front-End</h5>
                       <p class="card-text">html/css</p>
                       <p class="card-text">JavaScript</p>
@@ -98,24 +109,24 @@
                 </div>
             </div>
 
-            <div class="col col-md col-sm col-lg pb-5 ">
+            <div class="col-12 col-md-6 col-sm-6 col-lg-4 mb-3">
               <div class="card skill-card">
                 <div class="card-header">
                   <img src="./images/iconfinder_server_103333.png" alt="icon" width="50" height="50">
                 </div>
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h5 class="card-title">Server</h5>
                   <p class="card-text">Express</p>
                   <p class="card-text">Node.js</p>
                 </div>
               </div>
             </div>
-            <div class="col col-md col-sm col-lg pb-5 ">
+            <div class="col-12 col-md-6 col-sm-6 col-lg-4 ">
               <div class="card skill-card">
                 <div class="card-header">
                     <img src="./images/iconfinder_database_298757.png" alt="icon" width="50" height="50">
                 </div>
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h5 class="card-title">DataBase</h5>
                     <p class="card-text">MongoDB</p>
                     <p class="card-text">SQL</p>
@@ -126,12 +137,12 @@
           <!-- skills ends -->
           <hr />
           <!-- contact start -->
-          <div class="row">
+          <div class="row p-5">
             <div class="col">
               <h2 class="info-header">Contact me</h2>
             </div>
           </div>
-          <div class="row p-2" id="contact-info">
+          <div class="row p-5" id="contact-info">
               <div class="col-sm-3 text-center">
                 <a class="info-link" href="https://github.com/ADamian17" target="_blank"><img src="./images/iconfinder_mark-github_298822.png" alt="icon" class="rounded-circle" width="100" height="100"></a>
                   <h5>Github</h5>
@@ -158,11 +169,10 @@
       </div>
 
     <!-- FOOTER -->
-    <footer class="row justify-content-end p-3">
-      <p class="mr-5">&copy; 2019 Adonis D. Martin</p>
+    <footer class="row justify-content-center p-3">
+      <p>&copy; 2019 Adonis D. Martin</p>
     </footer>
   </main>
-  
   <!-- Modal -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -178,7 +188,8 @@
       </div>
     </div>
   </div>
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
