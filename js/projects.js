@@ -2,7 +2,7 @@ const projects = [
   {
   "title": "WatchChulo",  
   "description": "this is a react app inspire by Hulu", 
-  "repoLink": "https://git.generalassemb.ly/ADamian17/burnning_rubberhttps://github.com/ADamian17/chulo-front-end", 
+  "repoLink": "https://github.com/ADamian17/chulo-front-end", 
   "demoLink": "https://watchchulo.herokuapp.com/movies", 
   "photo":"./images/chulo.png"
 },
