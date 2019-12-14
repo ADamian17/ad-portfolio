@@ -12,7 +12,7 @@ const projects = [
   "description": "this is a racing game Inspired in an old race game i used to play", 
   "repoLink": "https://git.generalassemb.ly/ADamian17/burnning_rubber", 
   "gameLink": "https://pages.git.generalassemb.ly/ADamian17/burnning_rubber/", 
-  "photo":"/images/burnning_rubber.png"
+  "photo":"./images/burnning_rubber.png"
 }, 
   {
   "title": "Burning Rubber",  
