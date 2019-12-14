@@ -60,6 +60,7 @@
 .btn-outline-primary {
   background-color: var(--red2);
   color: aliceblue !important;
+  border-color: red !important;
   border-radius: none !important;
 } 
 
