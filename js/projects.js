@@ -4,7 +4,7 @@ const projects = [
   "description": "this is a react app inspire by Hulu", 
   "repoLink": "https://git.generalassemb.ly/ADamian17/burnning_rubber", 
   "demoLink": "https://watchchulo.herokuapp.com/movies", 
-  "photo":"/images/chulo3.png"
+  "photo":"./images/chulo3.png"
 },
 
   {
