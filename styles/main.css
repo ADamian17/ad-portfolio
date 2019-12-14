@@ -72,6 +72,7 @@
 
 .navbar {
   background-color: rgba(0,0,0,0.5) !important;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .nav-item:hover {
@@ -83,6 +84,7 @@
   position: relative;
   background-image: url('../images/mural.jpeg'); 
   background-attachment: fixed;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
 }
@@ -101,6 +103,10 @@
 .about-holder h2, .about-holder p{
   position: relative;
   z-index: 3;
+}
+
+.infolink {
+  color: aliceblue;
 }
 
 /* .aboutMeImg {
