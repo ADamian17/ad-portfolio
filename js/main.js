@@ -9,7 +9,7 @@ const showProjects = (arr) => {
 				<div class="card-body flex-fill">
 					<h5 class="card-title">${arr[i].title}</h5>
 					<p class="card-text">${arr[i].description}.</p>
-					<a href=${arr[i].repoLink} class="btn btn-primary rounded-pill float-right" target="_blank">code</a>
+					<a href=${arr[i].repoLink} class="btn btn-primary rounded-pill float-right" target="_blank">Code</a>
 					<a href=${arr[i].demoLink} class="btn btn-primary rounded-pill float-right mr-2" target="_blank">Demo</a>
 				 </div>
 			  </div>
