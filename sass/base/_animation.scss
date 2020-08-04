@@ -1,0 +1,18 @@
+@keyframes moveInFromTheBack {
+    /* start */
+    0% {
+        opacity: 0;
+        // transform: translateX(-10rem);
+    }
+    /* middle state*/
+    50% {
+        opacity: 1;
+        // transform: translateX(1rem);
+    }
+
+    /* final state */
+    100%{
+        opacity: 2;
+        // transform: translate(0);
+    }
+}

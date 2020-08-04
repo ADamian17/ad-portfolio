@@ -1,0 +1,28 @@
+.header {
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,  
+        rgba($color-primary-light, .8 ), 
+        rgba($color-primary-dark, .8)),
+        url(../images/b2.jpg);   
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    &__content-box {
+        text-align: center;
+    }
+}
