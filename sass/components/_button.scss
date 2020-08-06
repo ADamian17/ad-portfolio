@@ -14,6 +14,7 @@
     &:hover {
         transform: translateY(-0.3rem);
         box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        color: inherit;
 
         &::after {
             transform: scaleX(1.5) scaleY(1.6);
@@ -58,10 +59,10 @@
     //     }
     // }
 
-    // &--animate {
-    //     animation: moveInBottom .5s ease-out .75s;
-    //     animation-fill-mode: backwards;
-    // }
+    &--animate {
+        animation: moveInFromTheBack .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
 }
 
 

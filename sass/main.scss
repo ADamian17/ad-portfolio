@@ -1,11 +1,14 @@
 @import "abstract/variables";
 
+@import "base/animations";
 @import "base/typography";
 @import "base/base";
 
+@import "components/button";
+
 @import "layout/header";
 
-@import "components/button";
+@import "pages/home";
 
 :root {
     --green: rgb(30, 215, 96);
@@ -18,16 +21,6 @@
     --red2: rgb(4, 249, 102);
     --yellow: rgb(175, 247, 6);
 }
-  
-.navbar {
-    background-color: rgba(0,0,0,0.5) !important;
-    font-family: 'Nanum Gothic', sans-serif;
-    text-transform: uppercase;
-}
-  
-  .nav-item:hover {
-    border-bottom:2px solid red;
-  }
   
   .about-holder{
     position: relative;
