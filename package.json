@@ -1,0 +1,22 @@
+{
+  "name": "ad-portfolio",
+  "version": "1.0.0",
+  "description": "* [Porfolio Link](https://adamian17.github.io/ad-portfolio/.)",
+  "main": "server.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADamian17/ad-portfolio.git"
+  },
+  "author": "Adonis Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ADamian17/ad-portfolio/issues"
+  },
+  "homepage": "https://github.com/ADamian17/ad-portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

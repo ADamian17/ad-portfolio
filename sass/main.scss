@@ -1,0 +1,78 @@
+@import "abstract/variables";
+
+@import "base/typography";
+@import "base/base";
+
+@import "layout/header";
+
+@import "components/button";
+
+:root {
+    --green: rgb(30, 215, 96);
+    --red: rgb(215, 30, 55);
+    --light-black: rgb(40, 40, 40);
+    --black: rgb(0, 0, 0);
+    --grey: rgb(170, 170, 170);
+    --sand: rgb(200, 200, 200);
+    --white: rgb(255, 255, 255);
+    --red2: rgb(4, 249, 102);
+    --yellow: rgb(175, 247, 6);
+}
+  
+.navbar {
+    background-color: rgba(0,0,0,0.5) !important;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-transform: uppercase;
+}
+  
+  .nav-item:hover {
+    border-bottom:2px solid red;
+  }
+  
+  .about-holder{
+    position: relative;
+    background-image: url('../images/mural.jpeg'); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+  } 
+  
+   .about-holder::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.4)
+  }
+  
+  .about-holder h2, .about-holder p{
+    position: relative;
+    z-index: 3;
+  }
+  
+  .infolink {
+    color: aliceblue;
+  }
+  
+  /* .aboutMeImg {
+    background-image: url("../images/todayP.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 200px;
+    height: 200px;
+  } */
+  
+  .size-vh-70{
+    height: 100vh;
+  }
+  
+  footer{ 
+    background-color: black;
+    color: #fff;
+   } 
