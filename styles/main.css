@@ -1,3 +1,24 @@
+.u-center-text {
+  text-align: center; }
+
+.u-margin-top-big {
+  margin-top: 8rem; }
+
+.u-margin-top-x-big {
+  margin-top: 10rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-x-big {
+  margin-bottom: 10rem; }
+
 @keyframes moveInFromTheBack {
   /* start */
   0% {
@@ -12,7 +33,8 @@
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  line-height: 1.7; }
+  line-height: 1.7;
+  color: #777777; }
 
 .heading-primary {
   color: white;
@@ -36,6 +58,31 @@ body {
     /* short hand*/
     animation-fill-mode: backwards; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  background-image: linear-gradient(to right, #487cedeb, #171edceb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s;
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .heading-secondary:hover {
+    transform: scale(1.2);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-tertairy {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+
 *::after, *::before {
   margin: 0;
   padding: 0;
@@ -46,6 +93,40 @@ html {
 
 body {
   box-sizing: border-box; }
+
+.about {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rbga(#000, 0.1);
+  background-color: rgba(72, 124, 237, 0.1);
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  .about__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative;
+    margin-right: 1rem; }
+  .about__img {
+    height: 100%;
+    transform: translateX(2rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all .5s; }
+  .about__text {
+    transform: skewX(12deg); }
+  @media (max-width: 37.5rem) {
+    .about__shape, .about__text {
+      transform: skewX(0); } }
+  @media (max-width: 37.5rem) {
+    .about {
+      transform: skewX(0); } }
 
 .button:link, .button:visited {
   text-transform: uppercase;
@@ -118,54 +199,12 @@ body {
   .nav-item:hover {
     border: 2px solid #ffffff; }
 
-:root {
-  --green: rgb(30, 215, 96);
-  --red: rgb(215, 30, 55);
-  --light-black: rgb(40, 40, 40);
-  --black: rgb(0, 0, 0);
-  --grey: rgb(170, 170, 170);
-  --sand: rgb(200, 200, 200);
-  --white: rgb(255, 255, 255);
-  --red2: rgb(4, 249, 102);
-  --yellow: rgb(175, 247, 6); }
+.about-section {
+  padding: 10rem 0; }
+  @media (max-width: 37.5rem) {
+    .about-section {
+      padding: 5rem 0; } }
 
-.about-holder {
-  position: relative;
-  background-image: url("../images/mural.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff; }
-
-.about-holder::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.4); }
-
-.about-holder h2, .about-holder p {
-  position: relative;
-  z-index: 3; }
-
-.infolink {
-  color: aliceblue; }
-
-/* .aboutMeImg {
-    background-image: url("../images/todayP.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 10;
-    width: 200px;
-    height: 200px;
-  } */
-.size-vh-70 {
-  height: 100vh; }
-
-footer {
+.footer {
   background-color: black;
   color: #fff; }
