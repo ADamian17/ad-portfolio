@@ -5,6 +5,12 @@ body {
     color: $color-grey-dark;
 }
 
+p {
+    @media ( max-width: $iphone-x ) {
+        font-size: .7rem;
+    }
+}
+
 .heading-primary {
     color: white;
     text-transform: uppercase;
