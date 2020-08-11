@@ -1,0 +1,72 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+}
+
+p {
+    @media ( max-width: $iphone-x ) {
+        font-size: .7rem;
+    }
+}
+
+.heading-primary {
+    color: white;
+    text-transform: uppercase;
+    backface-visibility: hidden; /* check this*/
+    margin-bottom: 6rem;
+
+    &--main {
+        display: block;
+        font-size: 5rem;
+        font-weight: 400;
+        letter-spacing: 1.5rem;
+        animation: moveInFromTheBack 2s ease-out;
+        animation-fill-mode: backwards;
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        animation: moveInFromTheBack 1.5s ease-out .30s; /* short hand*/
+        animation-fill-mode: backwards;
+    }
+}
+
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    background-image: linear-gradient(
+        to right, 
+        $color-primary-light, 
+        $color-primary-dark 
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all .2s;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+
+    &:hover {
+        transform: scale(1.2);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+
+.heading-tertairy {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+}

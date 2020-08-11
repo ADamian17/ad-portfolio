@@ -1,0 +1,33 @@
+@keyframes moveInFromTheBack {
+    /* start */
+    0% {
+        opacity: 0;
+    }
+    /* middle state*/
+    50% {
+        opacity: 1;
+    }
+
+    /* final state */
+    100%{
+        opacity: 2;
+    }
+}
+
+@keyframes moveInLeft {
+    /* start */
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    /* middle state*/
+    80% {
+        transform: translateX(1rem);
+    }
+
+    /* final state */
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
