@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
 
   <!-- NOTE MAIN Style -->
+  <link rel="stylesheet" href="./styles/icons_fonts.css">
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/contacts.css">
   <link rel="stylesheet" href="./styles/skill.css">
@@ -28,9 +29,8 @@
 </head>
 <body>
     <div class="container-fluid">
-
         <header>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <nav id="main-navbar" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -134,48 +134,58 @@
                           </div>
                       </div>
                 </div>
+                <hr class="featurette-divider mt-5">
              </section>
-
+             
              <section id="contact-info" class="contacts-section">
-                 <hr class="featurette-divider mb-5">
+                <div class="row text-center">
+                   <div class="col">
+                       <h2 class="heading-secondary">Contact me</h2>
+                   </div>
+               </div>
+    
+               <div class="row p-3">
+                   <ul class="col text-center">
 
-                 <div class="row text-center mb-5">
-                    <div class="col">
-                        <h2 class="heading-secondary">Contact me</h2>
-                    </div>
-                </div>
+                     <a class="info-link" href="https://github.com/ADamian17" target="_blank">
+                        <img src="./images/iconfinder_mark-github_298822.png" alt="icon" class="rounded-circle" width="60" height="60">
+                    </a>
+                     <a class="info-link" href="https://www.linkedin.com/in/adonismartin" target="_blank">
+                        <img src="./images/iconfinder_linkedin_circle_black_107159.png" alt="icon" class="rounded-circle" width="60" height="60">
+                    </a>
+                     <a class="info-link" href="mailto:adonisdesuvikdo@gmail.com" target="_blank">
+                         <img src="./images/iconfinder_Rounded-07_2024667.png" alt="icon" class="rounded-circle" width="60" height="60">
+                    </a>
+                     <a href="tel:+5109876466">
+                         <img src="./images/iconfinder_21_Media_social_website_phone_2657555.png" alt="icon" class="rounded-circle" width="60" height="60">
+                    </a>
+                   </ul>
+                 </div>
+    
+            </section>
 
-                <div class="row p-3" >
-                    <ul class="col text-center">
-                      <a class="info-link" href="https://github.com/ADamian17" target="_blank"><img src="./images/iconfinder_mark-github_298822.png" alt="icon" class="rounded-circle" width="60" height="60"></a>
-                      <a class="info-link" href="https://www.linkedin.com/in/adonismartin" target="_blank"><img src="./images/iconfinder_linkedin_circle_black_107159.png" alt="icon" class="rounded-circle" width="60" height="60"></a>
-                      <a class="info-link" href="mailto:adonisdesuvikdo@gmail.com" target="_blank"><img src="./images/iconfinder_Rounded-07_2024667.png" alt="icon" class="rounded-circle" width="60" height="60"></a>
-                      <a href="tel:+5109876466"><img src="./images/iconfinder_21_Media_social_website_phone_2657555.png" alt="icon" class="rounded-circle" width="60" height="60"></a>
-                    </ul>
-                  </div>
-
-             </section>
           </div>
-          <!-- <div class="row justify-content-center p-5">
+
+          <div class="row justify-content-center p-5">
             <p class="float-right"><a href="#"><img src="./images/backToTheTop.png" alt="icon" width="50" height="50"></a></p>
-          </div> -->
+          </div>
     
         </main>
         <!-- FOOTER -->
         <footer class="row justify-content-center p-3 footer">
           <p>&copy; 2019 Adonis D. Martin</p>
         </footer>
-      
-      <!-- Modal -->
-      <div class="modal fade modal__resume" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    </div>
+
+     <!-- Modal -->
+     <div class="modal fade modal__resume" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
-            <embed src="./images/AdonisMartinResume.pdf" frameborder="0" width="100%" height="400px">
+            <embed class="modal-content__resume" src="./images/AdonisMartinResume.pdf" frameborder="0" width="100%" height="400px">
           </div>
         </div>
-      </div>
-
     </div>
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

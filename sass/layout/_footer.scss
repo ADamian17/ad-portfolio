@@ -1,0 +1,11 @@
+.footer {
+    font-size: $default-font-size;
+    background-image: linear-gradient(
+        to right bottom, 
+        $color-primary-light, 
+        $color-primary-dark);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    color: #fff;
+}

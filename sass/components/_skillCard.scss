@@ -7,6 +7,11 @@
 .skill-card {
     box-shadow: $default-box-shadow;
     padding: 1rem;
+    backface-visibility: hidden;
+    
+    &--animated {
+        animation: moveInLeft 3s ease-out;
+    }
 }
 
 .card-container {

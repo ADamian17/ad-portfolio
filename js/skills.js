@@ -1,5 +1,11 @@
 const skills = [
     {
+        id: 6,
+        skill:"HTML/CSS",
+        level: 20  
+    
+    },
+    {
         id: 1,
         skill:"JavaScript", 
         level: 20
@@ -23,12 +29,6 @@ const skills = [
         id: 5,
         skill:"MongoDB",
         level: 60  
-    },
-    {
-        id: 6,
-        skill:"HTML/CSS",
-        level: 20  
-
     },
     {
         id: 7,

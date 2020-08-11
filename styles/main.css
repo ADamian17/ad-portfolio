@@ -30,6 +30,19 @@
   100% {
     opacity: 2; } }
 
+@keyframes moveInLeft {
+  /* start */
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  /* middle state*/
+  80% {
+    transform: translateX(1rem); }
+  /* final state */
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -103,7 +116,10 @@ body {
 
 .skill-card {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  padding: 1rem; }
+  padding: 1rem;
+  backface-visibility: hidden; }
+  .skill-card--animated {
+    animation: moveInLeft 3s ease-out; }
 
 .card-container {
   display: grid;
@@ -258,6 +274,19 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translate(0); }
 
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  text-transform: uppercase;
+  font-size: 2rem !important;
+  padding: 1rem;
+  transition: all .5s; }
+
+.nav-item {
+  border: 2px solid transparent;
+  margin-right: 5px; }
+  .nav-item:hover {
+    border: 2px solid #ffffff; }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(72, 124, 237, 0.8), rgba(23, 30, 220, 0.8)), url(../images/b2.jpg);
@@ -271,17 +300,13 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
-.navbar {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+.footer {
+  font-size: 1.6rem;
+  background-image: linear-gradient(to right bottom, #487cedeb, #171edceb);
   text-transform: uppercase;
-  font-size: 2rem !important;
-  padding: 1rem; }
-
-.nav-item {
-  border: 2px solid transparent;
-  margin-right: 5px; }
-  .nav-item:hover {
-    border: 2px solid #ffffff; }
+  font-weight: 400;
+  letter-spacing: 1rem;
+  color: #fff; }
 
 .about-section {
   padding: 10rem 0; }
@@ -292,6 +317,8 @@ body {
 .skill-section {
   padding: 5rem 0; }
 
-.footer {
-  background-color: black;
-  color: #fff; }
+.modal-content {
+  height: 830px !important; }
+  .modal-content__resume {
+    width: 100%;
+    height: 100%; }

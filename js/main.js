@@ -1,4 +1,8 @@
-// functions
+// NOTE Navbar 
+
+
+
+// NOTE Project list
 const showProjects = ( arr ) => {
 	const $projectList = $('#project-list')
 	for (let i = 0; i < arr.length; i++) {
@@ -23,12 +27,11 @@ const showProjects = ( arr ) => {
 
 showProjects(projects);
 
-
+// NOTE Skill list
 const skillsList = ( arr ) => {
-
 	const $skillList = $("#skills-list");
+
 	arr.forEach( element => {
-		console.log(element)
 		const template = `
 		<div class="card-container">
 			<div class="card-container__skill">
@@ -37,22 +40,34 @@ const skillsList = ( arr ) => {
 			<div id="${element.id}" class="card-container__bar" />
 		</div>
 		`
+	
 		$skillList.append(template);
-
+		
 		$(`#${element.id}`).css( "background-image", `linear-gradient(-55deg, #dc8a8a ${element.level}%, red 10%)`);
 	});
 };
 
 skillsList(skills);
 
-{/* <div className="row justify-content-center">
-<div className="col-3">
-<h5 className="card-title text-center mt-2">{displayDate}</h5>
-</div>
-<div className="col-6" >
-  <div className="mt-2 pogressBar" style={bar}></div>
-</div>
-<div className="col-3">
-<h5 className="card-title mt-2 text-center">{storeCount}</h5>
-</div>
-</div> */}
+// NOTE handle scroll event
+const handleScroll = () => {
+	let scrolled = $(document).scrollTop();
+	console.log( "scrolled:", scrolled);
+	
+    // if ( scrolled >= 1000 ) {
+	// 	$( "#main-navbar" ).removeClass( "fixed-top" )
+	// } else {
+	// 	$( "#main-navbar" ).addClass( "fixed-top" )
+	// }
+
+    if ( scrolled >= 1400 ) {
+		// $( ".skill-card" ).css( "opacity", 0 )
+		$( ".skill-card" ).addClass( "skill-card--animated" )
+	} else {
+		// $( ".skill-card" ).css( "opacity", 1 )
+		$( ".skill-card" ).removeClass( "skill-card--animated" )
+	}
+};
+
+$( document ).scroll( handleScroll );
+
