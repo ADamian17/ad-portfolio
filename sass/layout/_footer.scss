@@ -8,4 +8,8 @@
     font-weight: 400;
     letter-spacing: 1rem;
     color: #fff;
+
+    @media ( max-width: $iphone-x ) {
+        letter-spacing: 0.5rem;
+    }
 }
