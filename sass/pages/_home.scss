@@ -1,0 +1,43 @@
+.about-section {
+    padding: 10rem 0;
+
+    @media ( max-width: $iphone-x ) {
+        padding: 5rem 0;
+    }
+}
+
+.skill-section {
+    padding: 5rem 0;
+}
+
+.contacts-section {
+    // height: 35rem; 
+    // background-image: linear-gradient(
+    //     to right bottom, 
+    //     $color-primary-light, 
+    //     $color-primary-dark);  
+    // position: relative;
+    
+    // &__icon {
+    //     font-size: 6rem;
+    //     margin-bottom: .5rem;
+    //     display: inline-block;
+    //     background-image: linear-gradient(
+    //         to right,
+    //         $color-primary-light,
+    //         $color-primary-dark,
+    //     );
+    //     background-clip: text;
+    //     -webkit-background-clip: text;
+    //     color: transparent;
+    // }
+}
+
+.modal-content {
+    height: 830px !important;
+
+    &__resume {
+        width: 100%;
+        height: 100%;
+    }
+}
