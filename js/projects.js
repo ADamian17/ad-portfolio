@@ -12,5 +12,12 @@ const projects = [
   "repoLink": "https://github.com/ADamian17/chulo-front-end", 
   "demoLink": "https://watchchulo.herokuapp.com", 
   "photo":"./images/chulo2.png"
+  },
+  {
+  "title": "Track That Job",  
+  "description": "This is a demo app create out of the nesecity of keeping my self organize while serching for jobs. I built this app myself from end to end, using React/Redux, CSS/Sass, Mongodb, Express. Hosted on Heroku", 
+  "repoLink": "https://github.com/ADamian17/job_tracker", 
+  "demoLink": "https://myjobstracker.herokuapp.com", 
+  "photo":"./images/trackThatJob.png"
   }
 ]
