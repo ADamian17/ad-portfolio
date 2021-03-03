@@ -7,7 +7,7 @@ const showProjects = ( arr ) => {
 	const $projectList = $('#project-list')
 	for (let i = 0; i < arr.length; i++) {
 		const template = 
-		`	<div class="col-12 col-md-6 col-sm-6 col-lg-6 projects-holder">
+		`	<div class="col-12 mb-5 col-md-6 col-sm-6 col-lg-6 projects-holder">
 				<div class="card project-card">
 					<img class="project-card__img card-img-top" src=${arr[i].photo} alt="Person in a jumping">
 					<div class="project-card__caption">
