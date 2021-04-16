@@ -17,7 +17,7 @@ const projects = [
   "title": "Track That Job",  
   "description": "This is a demo app created to keep myself organized, while job searching. I created this application myself from end to end, using React / Redux, CSS / Sass, Mongodb, Express. Hosted on Heroku", 
   "repoLink": "https://github.com/ADamian17/job_tracker", 
-  "demoLink": "http://www.trackthatjob.com", 
+  "demoLink": "www.trackthatjob.com", 
   "photo":"./images/trackThatJob.png"
   }
 ]
