@@ -52,7 +52,7 @@ skillsList(skills);
 // NOTE handle scroll event
 const handleScroll = () => {
 	let scrolled = $(document).scrollTop();
-	console.log( "scrolled:", scrolled);
+	// console.log( "scrolled:", scrolled);
 	
     // if ( scrolled >= 1000 ) {
 	// 	$( "#main-navbar" ).removeClass( "fixed-top" )
