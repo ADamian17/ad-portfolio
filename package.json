@@ -4,7 +4,7 @@
   "description": "* [Porfolio Link](https://adamian17.github.io/ad-portfolio/.)",
   "main": "server.js",
   "scripts": {
-    "compile:sass": "sass sass/main.scss styles/main.css -w"
+    "watch:sass": "sass sass/main.scss styles/styles.css -w"
   },
   "repository": {
     "type": "git",
