@@ -40,7 +40,6 @@
   &__picture {
     background-color: $color-secondary;
     height: 100%;
-    // grid-column: 1 / span 1;
     position: relative;
     overflow: hidden;
 
@@ -89,8 +88,6 @@
   &__content {
     height: 100%;
     background-color: $color-grey-light-1;
-    // grid-column: 2 / span 1;
-
     padding: 6rem 8vw;
 
     display: grid;
