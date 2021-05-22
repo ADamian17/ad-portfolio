@@ -1,19 +1,51 @@
 .header {
-    height: 100vh; 
-    background-image: linear-gradient(
-        to right bottom,  
-        rgba($color-primary-light, .8), 
-        rgba($color-primary-dark, .8)),  
-    url(../images/b2.jpg);   
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    
-    &__text-box {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
+    grid-column: center-start  / col-end 4;
+    padding: 8rem;
+    padding-top: 4rem;
+  
+    display: grid;
+    grid-template-rows: min-content minmax(6rem, min-content);
+    grid-template-columns: minmax(min-content, max-content);
+    row-gap: 1.5rem;
+    justify-content: center;
+    align-content: center;
+  
+    @media screen and ( max-width: $bp-medium ) {
+      grid-column: 1 / -1;
     }
-}
+  
+    @media screen and ( max-width: $bp-small ) {
+      padding: 5rem;
+    }
+  
+    &__logo {
+      height: 3rem;
+      justify-self: center;
+    }
+  
+    &__btn {
+      align-self: start;
+      justify-self: start;
+    }
+  }
+
+
+  .icon {
+    grid-column: col-start 5 / center-end;
+    padding: 3rem;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    row-gap: 2rem;
+    justify-items: center;
+  
+  
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    @media screen and ( max-width: $bp-medium ) {
+      grid-column: 1 / -1;
+    }
+  }  

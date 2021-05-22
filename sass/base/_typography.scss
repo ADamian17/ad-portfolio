@@ -1,72 +1,97 @@
-body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    color: $color-grey-dark;
-}
-
-p {
-    @media ( max-width: $iphone-x ) {
-        font-size: .7rem;
+%heading {
+    font-family: $font-display;
+    font-weight: 400; 
+  }
+  .heading-wrapper {
+    grid-column: center-start / center-end;
+    padding: 1rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    h2 {
+      margin: 0;
     }
-}
+  }
+  
+  .heading-1 {
+    @extend %heading;
+    font-size: 4.5rem;
+    color: $color-grey-dark-1;
+    line-height: 1; 
 
-.heading-primary {
-    color: white;
+    @media screen and ( max-width: $bp-medium ) {
+      font-size: 4.4rem;
+    }
+  }
+  
+  .heading-2 {
+    @extend %heading;
+  
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+  
+    &--light {
+      color: $color-grey-light-1;
+    }
+  
+    &--dark {
+      color: $color-grey-dark-1;
+    }
+  }
+  
+  .heading-3 {
+    @extend %heading;
+    font-size: 1.6rem;
+    color: $color-primary;
     text-transform: uppercase;
-    backface-visibility: hidden; /* check this*/
-    margin-bottom: 6rem;
-
-    &--main {
-        display: block;
-        font-size: 5rem;
-        font-weight: 400;
-        letter-spacing: 1.5rem;
-        animation: moveInFromTheBack 2s ease-out;
-        animation-fill-mode: backwards;
+  }
+  
+  .heading-4 {
+    @extend %heading;
+    font-size: 1.9rem;
+  
+    &--light {
+      color: $color-grey-light-1;
     }
-    
-    &--sub {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1.75rem;
-        animation: moveInFromTheBack 1.5s ease-out .30s; /* short hand*/
-        animation-fill-mode: backwards;
+  
+    &--dark {
+      color: $color-grey-dark-1;
     }
-}
-
-
-.heading-secondary {
-    font-size: 3.5rem;
+  }
+  
+  
+  .btn {
+    background-color: $color-primary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    font-weight: 600;
-    display: inline-block;
-    background-image: linear-gradient(
-        to right, 
-        $color-primary-light, 
-        $color-primary-dark 
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    letter-spacing: 2px;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
     transition: all .2s;
-    perspective: 150rem;
-    -moz-perspective: 150rem;
-
+  
     &:hover {
-        transform: scale(1.2);
-        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+      background-color: $color-primary-dark;
     }
-}
-
-.heading-tertairy {
-    font-size: $default-font-size;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.paragraph {
-    font-size: $default-font-size;
-}
+  }
+  
+  .mb-sm {
+    margin-bottom: 2rem;
+  }
+  
+  .mb-md {
+    margin-bottom: 3rem;
+  }
+  
+  .mb-lg {
+    margin-bottom: 4rem;
+  }
+  
+  .mb-xlg {
+    margin-bottom: 8rem;
+  }

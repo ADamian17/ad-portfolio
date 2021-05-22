@@ -1,15 +1,99 @@
 .footer {
-    font-size: $default-font-size;
-    background-image: linear-gradient(
-        to right bottom, 
-        $color-primary-light, 
-        $color-primary-dark);
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 1rem;
-    color: #fff;
+  background-color: $color-secondary;
+  grid-column: full-start / full-end;
+  padding: 8rem;
 
-    @media ( max-width: $iphone-x ) {
-        letter-spacing: 0.5rem;
+  position: relative;
+}
+
+.footer-nav {
+  list-style: none;
+  grid-column: center-start / center-end;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 30rem));
+  justify-content: center;
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1.4rem;
+    color: $color-grey-light-2;
+    text-decoration: none;
+    font-family: $font-display;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    transition: all .2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: currentColor;
+
+      margin-right: 1rem;
     }
+  }
+  
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, .05);
+    transform: translateY(-3px);
+  }
+}
+
+
+.copyright {
+  font-size: 1.4rem;
+  color: $color-grey-light-2;
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 70%;
+}
+
+.back-to-the-top {
+  position: fixed;
+  top: 55vh;
+  right: 1.5rem;
+
+  visibility: hidden;
+  pointer-events: none;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    padding: .5rem;
+    background-color: rgba(53, 55, 55, 0.337);
+    border-radius: .4rem;
+  }
+  
+  .item {
+    width: 1rem;
+    height: 1rem;
+    animation: toTop 1.5s infinite;
+    animation-delay: calc( var(--order) * 100ms );
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+@keyframes toTop {
+  from {
+    fill: #514d4d;
+  }
+  to {
+    fill: transparent;
+  }
 }
