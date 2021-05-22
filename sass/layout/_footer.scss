@@ -2,6 +2,8 @@
   background-color: $color-secondary;
   grid-column: full-start / full-end;
   padding: 8rem;
+
+  position: relative;
 }
 
 .footer-nav {
@@ -42,4 +44,46 @@
   margin-right: auto;
   text-align: center;
   width: 70%;
+}
+
+.back-to-the-top {
+  position: fixed;
+  top: 50vh;
+  right: 1rem;
+
+  visibility: hidden;
+  pointer-events: none;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    padding: .5rem;
+    background-color: rgba(53, 55, 55, 0.337);
+    border-radius: .4rem;
+  }
+  
+  .item {
+    width: 1rem;
+    height: 1rem;
+    animation: toTop 1.5s infinite;
+    animation-delay: calc( var(--order) * 100ms );
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+@keyframes toTop {
+  from {
+    fill: #514d4d;
+  }
+  to {
+    fill: transparent;
+  }
 }

@@ -1,8 +1,8 @@
 // COLOR VARIABLES
-$color-primary: #c69963;
-$color-primary-dark: #B28451;
+$color-primary: #6356e5;
+$color-primary-dark: #4133e3;
 
-$color-secondary: #101d2c;
+$color-secondary: #121313;
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #aaa;
@@ -46,7 +46,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 70vh min-content 20rem repeat(var(--amount), 30vw) 20rem repeat( 3, min-content );
+  grid-template-rows: 80vh min-content 20rem max-content 20rem repeat( 3, min-content );
   grid-template-columns: 
     [ full-start ] minmax( 6rem, 1fr ) 
     [ center-start ] repeat(8, [col-start] minmax( min-content, 14rem ) [col-end]) 
