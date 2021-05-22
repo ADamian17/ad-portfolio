@@ -201,6 +201,11 @@ body {
 .about__text {
   font-size: 1.8rem;
 }
+.about__icon {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+}
 
 #project-list {
   margin-top: 5rem;
