@@ -31,7 +31,7 @@ const showProjects = (arr) => {
   const $projectList = $('#project-list');
 
   for (let i = 0; i < arr.length; i++) {
-    const template = `
+    let template = `
     <article class="project">
     <div class="project__picture">
       <div class="project__backdrop" style="--background-image: url(../${arr[i].photo})"></div>
@@ -42,31 +42,15 @@ const showProjects = (arr) => {
       <h2 class="heading-2 heading-2--dark mb-md">&ldquo;${arr[i].title}&rdquo;</h2>
 
       <p class="project__text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur
-        voluptatibus.
-        Quidem consequatur harum volupta!
+      ${arr[i].description}
       </p>
       <div class="btn__group">
-        <button class="btn">Demo</button>
-        <button class="btn">Github Repo</button>
+        <a class="btn" href=${arr[i].demoLink} target="_blank">live Demo</a>
+        <a class="btn" href=${arr[i].repoLink} target="_blank" >Github Repo</a>
       </div>
     </div>
   </article>
-`;
-
-    // const template = `	<div class="col-12 mb-5 col-md-6 col-sm-6 col-lg-6 projects-holder">
-    // 		<div class="card project-card">
-    // 			<img class="project-card__img card-img-top" src=${arr[i].photo} alt="Person in a jumping">
-    // 			<div class="project-card__caption">
-    // 				<h5 class="card-title"></h5>
-    // 				<p class="card-text">${arr[i].description}.</p>
-
-    // 				<a href=${arr[i].repoLink} class="btn btn-primary rounded-pill" target="_blank">Code</a>
-    // 				<a href=${arr[i].demoLink} class="btn btn-primary rounded-pill mr-2" target="_blank">Demo</a>
-    // 			</div>
-    // 		</div>
-    // 	 </div>
-    // 	 `;
+  `;
     $projectList.append(template);
   }
 };
