@@ -57,3 +57,10 @@ body {
     grid-template-rows: calc( 50vh - 6rem );
   }
 }
+
+
+a,
+a:visited,
+a:link {
+  text-decoration: none;
+}

@@ -17,15 +17,25 @@
   &__link:link,
   &__link:visited {
     font-size: 1.4rem;
-    color: #fff;
+    color: $color-grey-light-2;
     text-decoration: none;
     font-family: $font-display;
     text-transform: uppercase;
     text-align: center;
     padding: 1.5rem;
-    display: block;
     transition: all .2s;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: currentColor;
+
+      margin-right: 1rem;
+    }
   }
   
   &__link:hover,
