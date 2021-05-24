@@ -11,7 +11,7 @@
   grid-column: center-start / center-end;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 30rem));
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 15rem));
   justify-content: center;
 
   &__link:link,
@@ -76,8 +76,8 @@
   }
   
   .item {
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
     animation: toTop 1.5s infinite;
     animation-delay: calc( var(--order) * 100ms );
   }
@@ -91,7 +91,7 @@
 
 @keyframes toTop {
   from {
-    fill: #514d4d;
+    fill: #595757;
   }
   to {
     fill: transparent;
