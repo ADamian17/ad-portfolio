@@ -22,6 +22,8 @@
     @supports ( backdrop-filter: blur(2px) ) {
       backdrop-filter: blur(2px) grayscale(50%);
     }
+
+    z-index: 100;
   }
 
   &__content {
@@ -31,7 +33,7 @@
     font-size: 1.5rem;
     animation: leftToRight .5s cubic-bezier(0,.97,1,.96);
     transition: all linear;
-    z-index: 100;
+    z-index: 200;
     backface-visibility: hidden;
 
     display: flex;

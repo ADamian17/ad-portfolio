@@ -280,7 +280,7 @@ a:link {
 }
 .project__img {
   width: 100%;
-  z-index: 100;
+  z-index: 1;
   grid-row: 2/6;
   grid-column: 2/6;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
@@ -521,6 +521,7 @@ a:link {
   transform-origin: top center;
   animation: fromTop 0.3s cubic-bezier(0, 0.97, 1, 0.96);
   backface-visibility: hidden;
+  z-index: 100;
 }
 @supports (backdrop-filter: blur(2px)) {
   .modal__backdrop {
@@ -534,7 +535,7 @@ a:link {
   font-size: 1.5rem;
   animation: leftToRight 0.5s cubic-bezier(0, 0.97, 1, 0.96);
   transition: all linear;
-  z-index: 100;
+  z-index: 200;
   backface-visibility: hidden;
   display: flex;
   justify-content: center;
