@@ -1,3 +1,6 @@
+import { projects } from './projects';
+import { createContact } from './api/callToAction';
+
 // NOTE Project list
 const showProjects = (arr) => {
   const $projectList = $('#project-list');
@@ -48,4 +51,4 @@ const handleScroll = () => {
 
 $(document).scroll(handleScroll);
 
-console.log(process.env.HELLO_WORLD)
+createContact();
