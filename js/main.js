@@ -3,6 +3,7 @@ import { createContact } from './api/callToAction';
 
 // NOTE Globals
 const ctaForm = $('.cta__form');
+const $modal = $('#modal');
 
 // NOTE Project list
 const showProjects = (arr) => {
@@ -70,6 +71,9 @@ const getFormValues = async (e) => {
     const res = await createContact(data);
     
     if (res.id) {
+      $modal.css({
+        display: 'flex'
+      })
       e.target.reset();
     }
 
@@ -81,3 +85,9 @@ const getFormValues = async (e) => {
 ctaForm.on('submit', getFormValues)
 
 $(document).scroll(handleScroll);
+
+$modal.on('click', function(event) {
+  $modal.css({
+    display: "none" 
+  });
+});
