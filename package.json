@@ -2,9 +2,10 @@
   "name": "ad-portfolio",
   "version": "1.0.0",
   "description": "* [Porfolio Link](https://adamian17.github.io/ad-portfolio/.)",
-  "main": "server.js",
+  "main": "main.js",
   "scripts": {
-    "watch:sass": "sass sass/main.scss styles/styles.css -w"
+    "watch:sass": "sass sass/main.scss styles/styles.css -w",
+    "watch:webpack": "webpack --config webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/ADamian17/ad-portfolio#readme",
   "devDependencies": {
-    "sass": "^1.33.0"
+    "dotenv-webpack": "^7.0.2",
+    "sass": "^1.33.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
   }
 }

@@ -15,7 +15,7 @@
     <script src="./js/skills.js" defer></script> -->
   <script src="/js/jquery-2.1.3.min.js"></script>
   <script src="/js/projects.js" defer></script>
-  <script src="/js/main.js" defer></script>
+  <script src="/build/js/app.js" defer></script>
 
   <title>Adonis Martin &mdash; portfolio</title>
 </head>
@@ -136,15 +136,36 @@
 
     <form class="cta__form" action="#">
       <div class="cta__row">
-        <input class="cta__input" type="text" name="firstName" placeholder="first name">
-        <input class="cta__input" type="text" name="lastName" placeholder="last name">
+        <input 
+          class="cta__input" 
+          type="text" 
+          name="firstName" 
+          id="firstName" 
+          placeholder="first name">
+
+        <input 
+          class="cta__input" 
+          type="text" 
+          name="lastName" 
+          id="lastName"
+          placeholder="last name">
       </div>
 
       <div class="cta__row">
-        <input class="cta__input" type="email" name="email" id="email" placeholder="email">
+        <input 
+          class="cta__input" 
+          type="email" 
+          name="email" 
+          id="email" 
+          placeholder="email">
       </div>
 
-      <textarea class="cta__message" name="message" id="message" cols="30" rows="10"
+      <textarea 
+        class="cta__message" 
+        name="message" 
+        id="message" 
+        cols="30" 
+        rows="10"
         placeholder="message"></textarea>
 
       <input class="btn cta__btn" type="button" value="let's connect">
