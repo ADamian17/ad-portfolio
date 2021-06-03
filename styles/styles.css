@@ -72,7 +72,7 @@ a:link {
   line-height: 1;
 }
 .heading-2--light {
-  color: #f9f7f6;
+  color: #aaa;
 }
 .heading-2--dark {
   color: #54483A;
@@ -280,7 +280,7 @@ a:link {
 }
 .project__img {
   width: 100%;
-  z-index: 100;
+  z-index: 1;
   grid-row: 2/6;
   grid-column: 2/6;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
@@ -392,7 +392,7 @@ a:link {
   grid-column: center-start/center-end;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 30rem));
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 15rem));
   justify-content: center;
 }
 .footer-nav__link:link, .footer-nav__link:visited {
@@ -447,8 +447,8 @@ a:link {
   border-radius: 0.4rem;
 }
 .back-to-the-top .item {
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   animation: toTop 1.5s infinite;
   animation-delay: calc( var(--order) * 100ms );
 }
@@ -459,10 +459,111 @@ a:link {
 
 @keyframes toTop {
   from {
-    fill: #514d4d;
+    fill: #595757;
   }
   to {
     fill: transparent;
+  }
+}
+.cta__form {
+  grid-column: center-start/center-end;
+  display: grid;
+  row-gap: 2rem;
+  grid-template-rows: repeat(3, min-content);
+  grid-template-columns: repeat(4, [col-start] minmax(min-content, 14rem) [col-end]);
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  margin-bottom: 6rem;
+}
+.cta__row {
+  width: 100%;
+  grid-column: col-start 1/-1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+.cta__input {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+.cta__message {
+  grid-column: col-start 1/span 4;
+  width: 100%;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+.cta__btn {
+  grid-column: col-start 1/span 4;
+  width: 100%;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.modal__backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #2a2b2ba1;
+  transform-origin: top center;
+  animation: fromTop 0.3s cubic-bezier(0, 0.97, 1, 0.96);
+  backface-visibility: hidden;
+  z-index: 100;
+}
+@supports (backdrop-filter: blur(2px)) {
+  .modal__backdrop {
+    backdrop-filter: blur(2px) grayscale(50%);
+  }
+}
+.modal__content {
+  background-color: #fff;
+  width: 60rem;
+  height: 20rem;
+  font-size: 1.5rem;
+  animation: leftToRight 0.5s cubic-bezier(0, 0.97, 1, 0.96);
+  transition: all linear;
+  z-index: 200;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__icon {
+  fill: #00904a;
+  width: 10rem;
+  height: 10rem;
+  margin-right: 1rem;
+}
+
+@keyframes fromTop {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-1160px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0);
+    opacity: 1;
   }
 }
 

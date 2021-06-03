@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
   {
     "title": "Burning Rubber",  
     "description": "This is my first project that I created. I used css animations to bring it to live, is very fun and easy game to play. Built with html/css, Javascript, and jQuery", 

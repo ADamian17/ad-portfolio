@@ -1,30 +1,9 @@
-// // NOTE Nav
-// const $nav = document.querySelector('.nav');
-// const $closeIcon = document.getElementById('close-icon');
-// const $openIcon = document.getElementById('open-icon');
-// const $navItems = document.querySelectorAll('.nav__item');
-// console.log($navItems);
+import { projects } from './projects';
+import { createContact } from './api/callToAction';
 
-// $nav.style.display = 'none';
-
-// $openIcon.addEventListener('click', function (e) {
-//   this.style.display = 'none';
-//   $nav.style.display = 'flex';
-
-//   $navItems.forEach((el) => {
-//     el.style.display = 'flex';
-//     el.style.animation = 'fromLeft .5s linear easy';
-//   });
-// });
-
-// $closeIcon.addEventListener('click', function (e) {
-//   $nav.style.display = 'none';
-//   $openIcon.style.display = 'block';
-
-//   $navItems.forEach((el) => {
-//     el.style.display = 'none';
-//   });
-// });
+// NOTE Globals
+const ctaForm = $('.cta__form');
+const $modal = $('#modal');
 
 // NOTE Project list
 const showProjects = (arr) => {
@@ -57,31 +36,6 @@ const showProjects = (arr) => {
 
 showProjects(projects);
 
-// // NOTE Skill list
-// const skillsList = (arr) => {
-//   const $skillList = $('#skills-list');
-
-//   arr.forEach((element) => {
-//     const template = `
-// 		<div class="card-container">
-// 			<div class="card-container__skill">
-// 				<p class="card-container__skill--text">${element.skill}: <span class="skill-card__bar"></span></p>
-// 			</div>
-// 			<div id="${element.id}" class="card-container__bar" />
-// 		</div>
-// 		`;
-
-//     $skillList.append(template);
-
-//     $(`#${element.id}`).css(
-//       'background-image',
-//       `linear-gradient(-55deg, #dc8a8a ${element.level}%, red 10%)`
-//     );
-//   });
-// };
-
-// skillsList(skills);
-
 // NOTE handle scroll event
 const handleScroll = () => {
   let scrolled = $(document).scrollTop();
@@ -99,4 +53,41 @@ const handleScroll = () => {
   }
 };
 
+// NOTE cta form
+const getFormValues = async (e) => {
+  try {
+    e.preventDefault();
+
+    const firstName = $('#firstName').val();
+    const lastName = $('#lastName').val();
+    const message = $('#message').val();
+
+    const data = {
+      firstName,
+      lastName,
+      message,
+    }
+
+    const res = await createContact(data);
+    
+    if (res.id) {
+      $modal.css({
+        display: 'flex'
+      })
+      e.target.reset();
+    }
+
+  } catch (error) {
+    return console.log(error);
+  }
+}
+
+ctaForm.on('submit', getFormValues)
+
 $(document).scroll(handleScroll);
+
+$modal.on('click', function(event) {
+  $modal.css({
+    display: "none" 
+  });
+});

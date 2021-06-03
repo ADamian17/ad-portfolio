@@ -14,8 +14,8 @@
   <!-- NOTE Scripts
     <script src="./js/skills.js" defer></script> -->
   <script src="/js/jquery-2.1.3.min.js"></script>
-  <script src="/js/projects.js" defer></script>
-  <script src="/js/main.js" defer></script>
+  <!-- <script src="/js/projects.js" defer></script> -->
+  <script src="/build/js/app.js" defer ></script>
 
   <title>Adonis Martin &mdash; portfolio</title>
 </head>
@@ -40,9 +40,6 @@
       </figure>
       <div class="wrapper">
         <h4 class="heading-4 heading-4--dark">
-          <!-- <svg class="about__icon">
-            <use xlink:href="assets/icons.svg#icon-cool"></use>
-          </svg> -->
           About Me
         </h4>
         <p class="about__text">Hola! I'm Adonis Martin, a classically trained Ballet and Modern dancer turned
@@ -133,17 +130,48 @@
   </section>
 
   <footer class="footer">
+    <section class="heading-wrapper">
+      <h2 class="heading-2 heading-2--light mb-md">Let's Connect</h2>
+    </section>
+
+    <form class="cta__form">
+      <div class="cta__row">
+        <input 
+          class="cta__input" 
+          type="text" 
+          name="firstName" 
+          id="firstName" 
+          placeholder="first name">
+
+        <input 
+          class="cta__input" 
+          type="text" 
+          name="lastName" 
+          id="lastName"
+          placeholder="last name">
+      </div>
+
+      <div class="cta__row">
+        <input 
+          class="cta__input" 
+          type="email" 
+          name="email" 
+          id="email" 
+          placeholder="email">
+      </div>
+
+      <textarea 
+        class="cta__message" 
+        name="message" 
+        id="message" 
+        cols="30" 
+        rows="10"
+        placeholder="message"></textarea>
+
+      <input class="btn cta__btn" type="submit" value="let's connect">
+    </form>
+
     <ul class="footer-nav">
-
-      <li class="footer-nav__item">
-        <a href="mailto:adonisdesuvikdo@gmail.com" target="_blank" class="footer-nav__link">
-          <svg>
-            <use xlink:href="assets/icons.svg#icon-envelope"></use>
-          </svg>
-          Email
-        </a>
-      </li>
-
       <li class="footer-nav__item">
         <a href="https://github.com/ADamian17" target="_blank" class="footer-nav__link">
           <svg>
@@ -154,13 +182,22 @@
       </li>
 
       <li class="footer-nav__item">
-        <a href="https://www.linkedin.com/in/adonismartin/" target="_blank" class="footer-nav__link"><svg>
+        <a href="https://www.linkedin.com/in/adonismartin/" target="_blank" class="footer-nav__link">
+          <svg>
             <use xlink:href="assets/icons.svg#icon-linkedin-square"></use>
           </svg>
           Linkedin
         </a>
       </li>
-
+      
+      <li class="footer-nav__item">
+        <a href="/resume/resume2021.pdf" target="_blank" class="footer-nav__link">
+          <svg>
+            <use xlink:href="assets/icons.svg#icon-download"></use>
+          </svg>
+          Resume
+        </a>
+      </li>
     </ul>
 
     <p class="copyright">
@@ -168,7 +205,6 @@
     </p>
 
     <div class="back-to-the-top">
-
       <a href="#">
         <div class="item" style="--order: 3">
           <svg class="item__icon">
@@ -187,59 +223,19 @@
           </svg>
         </div>
       </a>
-
     </div>
   </footer>
-
-
-
-
-  <!-- <div>
-
-    <svg class="menu-bars" id="open-icon">
-      <use xlink:href="assets/icons.svg#icon-bars"></use>
-    </svg>
-
-    <div class="nav">
-      <div class="back-drop" style="--order: 1;"></div>
-      <svg class="close-icon" id="close-icon">
-        <use xlink:href="assets/icons.svg#icon-close"></use>
+  
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal__backdrop"></div>
+    <div class="modal__content">
+      <svg class="modal__icon">
+        <use xlink:href="assets/icons.svg#icon-check-square-o"></use>
       </svg>
-
-      <ul class="nav__list" style="--order: 2;">
-
-        <li class="nav__item" style="--order: 1;">
-          <svg class="nav__icon">
-            <use xlink:href="assets/icons.svg#icon-files-empty"></use>
-          </svg>
-          <a class="nav__link" href="#projects">
-            Projects
-          </a>
-        </li>
-
-        <li class="nav__item" style="--order: 2;">
-          <svg class="nav__icon">
-            <use xlink:href="assets/icons.svg#icon-cool"></use>
-          </svg>
-          <a class="nav__link" href="#about">
-            About Me
-          </a>
-        </li>
-
-        <li class="nav__item" style="--order: 3;">
-          <svg class="nav__icon">
-            <use xlink:href="assets/icons.svg#icon-address-book"></use>
-          </svg>
-          <a class="nav__link" href="#contact-info">
-            Contacts
-          </a>
-        </li>
-
-      </ul>
-    </div> -->
-
-  </div>
-
+      <h2 class="modal__text">Contact Successfully Added!</h2>     
+    </div>
+  </div> 
 </body>
 
 </html>
