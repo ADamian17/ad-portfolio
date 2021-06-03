@@ -481,7 +481,7 @@ a:link {
   grid-column: col-start 1/-1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  column-gap: 2rem;
+  gap: 2rem;
 }
 .cta__input {
   width: 100%;
