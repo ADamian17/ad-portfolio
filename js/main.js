@@ -1,6 +1,9 @@
 import { projects } from './projects';
 import { createContact } from './api/callToAction';
 
+// NOTE Globals
+const ctaForm = $('.cta__form');
+
 // NOTE Project list
 const showProjects = (arr) => {
   const $projectList = $('#project-list');
@@ -49,6 +52,32 @@ const handleScroll = () => {
   }
 };
 
-$(document).scroll(handleScroll);
+// NOTE cta form
+const getFormValues = async (e) => {
+  try {
+    e.preventDefault();
 
-createContact();
+    const firstName = $('#firstName').val();
+    const lastName = $('#lastName').val();
+    const message = $('#message').val();
+
+    const data = {
+      firstName,
+      lastName,
+      message,
+    }
+
+    const res = await createContact(data);
+    
+    if (res.id) {
+      e.target.reset();
+    }
+
+  } catch (error) {
+    return console.log(error);
+  }
+}
+
+ctaForm.on('submit', getFormValues)
+
+$(document).scroll(handleScroll);
