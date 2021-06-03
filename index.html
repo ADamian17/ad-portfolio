@@ -135,10 +135,17 @@
     </section>
 
     <form class="cta__form" action="#">
-      <input class="cta__input" type="email" name="email" id="email" placeholder="e.g dev@gmail.com">
+      <div class="cta__row">
+        <input class="cta__input" type="text" name="firstName" placeholder="first name">
+        <input class="cta__input" type="text" name="lastName" placeholder="last name">
+      </div>
+
+      <div class="cta__row">
+        <input class="cta__input" type="email" name="email" id="email" placeholder="email">
+      </div>
 
       <textarea class="cta__message" name="message" id="message" cols="30" rows="10"
-        placeholder="e.g dev@gmail.com"></textarea>
+        placeholder="message"></textarea>
 
       <input class="btn cta__btn" type="button" value="let's connect">
     </form>
@@ -146,13 +153,28 @@
     <ul class="footer-nav">
       <li class="footer-nav__item">
         <a href="https://github.com/ADamian17" target="_blank" class="footer-nav__link">
+          <svg>
+            <use xlink:href="assets/icons.svg#icon-github-square"></use>
+          </svg>
           Github
         </a>
       </li>
 
       <li class="footer-nav__item">
         <a href="https://www.linkedin.com/in/adonismartin/" target="_blank" class="footer-nav__link">
+          <svg>
+            <use xlink:href="assets/icons.svg#icon-linkedin-square"></use>
+          </svg>
           Linkedin
+        </a>
+      </li>
+      
+      <li class="footer-nav__item">
+        <a href="/resume/resume2021.pdf" target="_blank" class="footer-nav__link">
+          <svg>
+            <use xlink:href="assets/icons.svg#icon-download"></use>
+          </svg>
+          Resume
         </a>
       </li>
     </ul>
