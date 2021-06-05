@@ -541,6 +541,11 @@ a:link {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 50em) {
+  .modal__content {
+    width: 40rem;
+  }
+}
 .modal__icon {
   fill: #00904a;
   width: 10rem;
