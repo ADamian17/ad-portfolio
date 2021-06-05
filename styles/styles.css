@@ -544,6 +544,7 @@ a:link {
 @media screen and (max-width: 50em) {
   .modal__content {
     width: 40rem;
+    font-size: 1.3rem;
   }
 }
 .modal__icon {
@@ -551,6 +552,12 @@ a:link {
   width: 10rem;
   height: 10rem;
   margin-right: 1rem;
+}
+@media screen and (max-width: 50em) {
+  .modal__icon {
+    width: 8rem;
+    height: 8rem;
+  }
 }
 
 @keyframes fromTop {

@@ -42,6 +42,7 @@
 
     @media screen and ( max-width: $bp-medium ) {
       width: 40rem;
+      font-size: 1.3rem;
     }
   }
 
@@ -50,6 +51,11 @@
     width: 10rem;
     height: 10rem;
     margin-right: 1rem;
+
+    @media screen and ( max-width: $bp-medium ) {
+      width: 8rem;
+      height: 8rem;
+    }
   } 
 
 }
