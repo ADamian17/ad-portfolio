@@ -9,7 +9,7 @@ module.exports = {
     rules: [
       {
         test: [/\.js$/],
-        // exclude: /node_modules/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
@@ -21,16 +21,16 @@ module.exports = {
                     esmodules: true,
                   },
                 },
-              ]
-            ]
-          }
-        }
-      }
-    ]
+              ],
+            ],
+          },
+        },
+      },
+    ],
   },
   output: {
     filename: 'app.js',
     path: path.resolve(__dirname, 'build', 'js'),
   },
-  plugins: [new Dotenv] 
+  plugins: [new Dotenv()],
 };

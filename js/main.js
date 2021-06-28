@@ -1,5 +1,6 @@
 import { projects } from './projects';
 import { createContact } from './api/callToAction';
+import * as utils from './utils/functs';
 
 // NOTE Globals
 const ctaForm = $('.cta__form');
@@ -63,10 +64,15 @@ const getFormValues = async (e) => {
     const message = $('#message').val();
 
     const data = {
-      firstName,
-      lastName,
-      message,
+      firstName: firstName,
+      lastName: lastName,
+      message: message,
     }
+
+    const isValid = utils.validateForm(data);
+
+    console.log(isValid);
+    return;
 
     const res = await createContact(data);
     
@@ -91,3 +97,11 @@ $modal.on('click', function(event) {
     display: "none" 
   });
 });
+
+// $(document).on('click', 'a[href^="#"]', function (event) {
+//     event.preventDefault();
+
+//     $('html, body').animate({
+//         scrollTop: $($.attr(this, 'href')).offset().top
+//     }, 500);
+// });
