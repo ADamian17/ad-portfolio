@@ -19,5 +19,12 @@ export const projects = [
   "repoLink": "https://github.com/ADamian17/job_tracker", 
   "demoLink": "http://www.trackthatjob.com", 
   "photo":"./images/trackThatJob.png"
+  },
+  {
+  "title": "Shirt Bot",  
+  "description": "This is a ecommerce slack bot. Where you can buy t-shirts irresponsibly from your slack app. Techonologies used React/Redux, SASS. This a collaborition app between me as the Front-End Engineer and one of my friends working in the Back-End. <b>THE APP IS CURRENTLY ON DEVELOPMENT LIVE DEMO AND GITHUB REPO ARE NOT AVAILIBLE.</b>", 
+  "repoLink": null, 
+  "demoLink": null, 
+  "photo":"./images/shirtbot.png"
   }
 ]

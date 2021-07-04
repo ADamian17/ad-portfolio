@@ -25,8 +25,8 @@ const showProjects = (arr) => {
       ${arr[i].description}
       </p>
       <div class="btn__group">
-        <a class="btn" href=${arr[i].demoLink} target="_blank">live Demo</a>
-        <a class="btn" href=${arr[i].repoLink} target="_blank" >Github Repo</a>
+        <a class="btn" href=${arr[i].demoLink} style="${ !arr[i].demoLink ? "display: none" : "display: inline-block;"}" target="_blank">live Demo</a>
+        <a class="btn" href=${arr[i].repoLink} style="${ !arr[i].repoLink ? "display: none" : "display: inline-block;"}" target="_blank" >Github Repo</a>
       </div>
     </div>
   </article>
@@ -71,18 +71,20 @@ const getFormValues = async (e) => {
 
     const isValid = utils.validateForm(data);
 
-    console.log(isValid);
-    return;
+    if(isValid) {
+      const res = await createContact(data);
+      if (res.id) {
+        $modal.css({
+          display: 'flex'
+        })
+        e.target.reset();
+      }
 
-    const res = await createContact(data);
-    
-    if (res.id) {
-      $modal.css({
-        display: 'flex'
-      })
-      e.target.reset();
+      return;
     }
-
+    
+    return;
+    
   } catch (error) {
     return console.log(error);
   }
@@ -97,11 +99,3 @@ $modal.on('click', function(event) {
     display: "none" 
   });
 });
-
-// $(document).on('click', 'a[href^="#"]', function (event) {
-//     event.preventDefault();
-
-//     $('html, body').animate({
-//         scrollTop: $($.attr(this, 'href')).offset().top
-//     }, 500);
-// });
