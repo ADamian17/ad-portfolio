@@ -156,6 +156,7 @@ a:link {
   text-align: center;
   padding: 1.5rem;
   transition: all 0.2s;
+  border-bottom: 2.5px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,6 +169,7 @@ a:link {
 }
 .nav__link:hover, .nav__link:active {
   background-color: rgba(255, 255, 255, 0.05);
+  border-bottom: 2.5px solid #487cedeb;
 }
 
 .header {
