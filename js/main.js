@@ -5,6 +5,8 @@ import * as utils from './utils/functs';
 // NOTE Globals
 const ctaForm = $('.cta__form');
 const $modal = $('#modal');
+const $nav = $('.nav')
+const $allAnchorWithHash = $('a[href*="#"]');
 
 // NOTE Project list
 const showProjects = (arr) => {
@@ -41,12 +43,34 @@ showProjects(projects);
 const handleScroll = () => {
   let scrolled = $(document).scrollTop();
 
-  if (scrolled >= 1000) {
+  if (scrolled >= 100) {
     $('.back-to-the-top').css({
       visibility: 'visible',
       'pointer-events': 'all',
     });
+
+    // $nav.css({
+    //   position: 'fixed',
+    //   top: 0,
+    //   left: 0,
+    //   width: '100%',
+    //   'z-index': 2
+    // });
+
+    // $('.container').css({
+    //   'grid-template-rows': '80vh min-content 20rem max-content 20rem repeat( 3, min-content )'
+    // });
+
   } else {
+
+    // $nav.css({
+    //   position: 'relative',
+    // });
+
+    // $('.container').css({
+    //   'grid-template-rows': '5rem 80vh min-content 20rem max-content 20rem repeat( 3, min-content )'
+    // });
+
     $('.back-to-the-top').css({
       visibility: 'hidden',
       'pointer-events': 'none',
@@ -99,3 +123,41 @@ $modal.on('click', function(event) {
     display: "none" 
   });
 });
+
+/* LINK https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
+// Select all links with hashes
+$allAnchorWithHash
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });

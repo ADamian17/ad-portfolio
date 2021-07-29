@@ -1,16 +1,50 @@
-.navbar {
-    background-color: rgba(0, 0, 0, 0.5) !important;
-    text-transform: uppercase;
-    font-size: 2rem !important;
-    padding: 1rem;
-    transition: all .5s; 
-}
+.nav {
+  grid-column: 1 / -1;
+  background-color: $color-secondary;
+  height: 5vh;
+  display: grid;
+  align-content: center;
 
-.nav-item {
-    border: 2px solid transparent;
-    margin-right: 5px;
-    
-    &:hover {
-        border: 2px solid $color-white; 
+
+  &__menu {
+    height: 100%;
+    list-style: none;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 15rem));
+    justify-content: center;
+
+    @media screen and ( max-width: $bp-medium ) {
+      gap: .8rem;
     }
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1.4rem;
+    color: $color-grey-light-2;
+    text-decoration: none;
+    font-family: $font-display;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    transition: all .2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: currentColor;
+
+      margin-right: 1rem;
+    }
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, .05);
+  }
 }

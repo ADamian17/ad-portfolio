@@ -21,7 +21,37 @@
 </head>
 
 <body class="container">
+  <nav class="nav" id="nav-main">
 
+    <ul class="nav__menu">
+      <li class="nav__item">
+        <a href="#projects" class="nav__link">
+          <svg>
+            <use xlink:href="assets/icons.svg#icon-folder"></use>
+          </svg>
+          Projects
+        </a>
+      </li>
+
+      <li class="nav__item">
+        <a href="#about-section" class="nav__link">
+          <svg>
+            <use xlink:href="assets/icons.svg#icon-cool2"></use>
+          </svg>
+          About Me
+        </a>
+      </li>
+      
+      <li class="nav__item">
+        <a href="/resume/resume2021.pdf" target="_blank" class="nav__link">
+          <svg>
+            <use xlink:href="assets/icons.svg#icon-download"></use>
+          </svg>
+          Resume
+        </a>
+      </li>
+    </ul>
+  </nav>
   <header class="header">
     <h1 class="heading-1 heading-1--dark">Adonis D. Martin Software Engineer</h1>
     <a href="#projects" class="btn header__btn">projects</a>
@@ -31,6 +61,10 @@
     <figure>
       <img src="/assets/undraw_startup_life_2du2.svg" alt="person walking">
     </figure>
+  </section>
+
+  <section class="heading-wrapper" id="about-section">
+    <h2 class="heading-2 heading-2--dark mb-md">About Me</h2>
   </section>
 
   <section class="about">
@@ -141,14 +175,14 @@
           type="text" 
           name="firstName" 
           id="firstName" 
-          placeholder="first name"> 
+          placeholder="First name"> 
 
         <input 
           class="cta__input" 
           type="text" 
           name="lastName" 
           id="lastName"
-          placeholder="last name">
+          placeholder="Last name">
       </div>
 
       <div class="cta__row">
@@ -157,7 +191,7 @@
           type="email" 
           name="email" 
           id="email" 
-          placeholder="email">
+          placeholder="Email">
       </div>
 
       <textarea 
@@ -205,7 +239,7 @@
     </p>
 
     <div class="back-to-the-top">
-      <a href="#">
+      <a href="#nav-main">
         <div class="item" style="--order: 3">
           <svg class="item__icon">
             <use xlink:href="assets/icons.svg#icon-chevron-up"></use>

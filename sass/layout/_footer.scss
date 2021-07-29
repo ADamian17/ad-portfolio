@@ -24,6 +24,7 @@
     text-align: center;
     padding: 1.5rem;
     transition: all .2s;
+    border-bottom: 2px solid transparent;
 
     display: flex;
     justify-content: center;
@@ -42,6 +43,7 @@
   &__link:active {
     background-color: rgba(#fff, .05);
     transform: translateY(-3px);
+    border-bottom: 2px solid $color-primary-light;
   }
 }
 
@@ -58,7 +60,7 @@
 
 .back-to-the-top {
   position: fixed;
-  top: 55vh;
+  bottom: 10vh;
   right: 1.5rem;
 
   visibility: hidden;

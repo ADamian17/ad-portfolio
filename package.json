@@ -6,7 +6,9 @@
   "scripts": {
     "watch:sass": "sass sass/main.scss styles/styles.css -w",
     "watch:webpack": "webpack --config webpack.config.js --watch",
-    "start": "npm-run-all --parallel watch:webpack watch:sass"
+    "dev-server": "lite-server",
+    "start": "npm-run-all --parallel dev-server watch:webpack watch:sass",
+    "build": "webpack --config webpack.production.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
     "@babel/preset-env": "^7.14.4",
     "babel-loader": "^8.2.2",
     "dotenv-webpack": "^7.0.2",
+    "lite-server": "^2.6.1",
     "npm-run-all": "^4.1.5",
     "sass": "^1.33.0",
     "webpack": "^5.38.1",
