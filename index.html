@@ -21,7 +21,7 @@
 </head>
 
 <body class="container">
-  <nav class="nav">
+  <nav class="nav" id="nav-main">
 
     <ul class="nav__menu">
       <li class="nav__item">
@@ -63,7 +63,11 @@
     </figure>
   </section>
 
-  <section id="about-section" class="about">
+  <section class="heading-wrapper" id="about-section">
+    <h2 class="heading-2 heading-2--dark mb-md">About Me</h2>
+  </section>
+
+  <section class="about">
     <div class="about__content">
       <figure>
         <img src="/assets/undraw_a_moment_to_relax_bbpa.svg" alt="">
@@ -235,7 +239,7 @@
     </p>
 
     <div class="back-to-the-top">
-      <a href="#">
+      <a href="#nav-main">
         <div class="item" style="--order: 3">
           <svg class="item__icon">
             <use xlink:href="assets/icons.svg#icon-chevron-up"></use>
