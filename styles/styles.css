@@ -144,7 +144,7 @@ a:link {
 }
 @media screen and (max-width: 50em) {
   .nav__menu {
-    gap: 0.8rem;
+    gap: 0.5rem;
   }
 }
 .nav__link:link, .nav__link:visited {
