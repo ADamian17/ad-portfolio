@@ -114,7 +114,7 @@ const getFormValues = async (e) => {
   }
 }
 
-ctaForm.on('submit', getFormValues)
+// ctaForm.on('submit', getFormValues)
 
 $(document).scroll(handleScroll);
 
